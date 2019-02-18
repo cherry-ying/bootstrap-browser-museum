@@ -29,6 +29,9 @@
             font-size: 20px;
             line-height: 1.8;
         }
+        .container-intro{
+        	padding-top:60px
+        }
         /* 响应式布局 */
 
         @media (max-width: 768px) {
@@ -47,6 +50,12 @@
                 font-size: 16px;
                 line-height: 1.4;
             }
+             .container-intro{
+        	padding-top:0px
+        }
+        .container-intro .col-md-4{
+        	margin-bottom: 20px;
+        }
         }
     </style>
 </head>
@@ -159,6 +168,30 @@
     <a href="#myCarousel" class="carousel-control right" data-slide="next">
         <span class="glyphicon glyphicon-chevron-right"></span>
     </a>
+</div>
+
+<!--三栏简介布局-->
+<div class="container text-center container-intro">
+	<div class="row">
+		<div class="col-md-4">
+			<img src="images/chrome-logo-small.jpg"/>
+			 <h2>Chrome</h2>
+            <p>Google Chrome，又称Google浏览器，是一个由Google（谷歌）公司开发的网页浏览器。</p>
+            <button class="btn btn-default">点我下载</button>
+		</div>
+		<div class="col-md-4">
+			<img src="images/firefox-logo-small.jpg"/>
+			<h2>Firefox</h2>
+            <p>Mozilla Firefox，中文名通常称为“火狐”或“火狐浏览器”，是一个开源网页浏览器。</p>
+			<button class="btn btn-default">点我下载</button>
+		</div>
+		<div class="col-md-4">
+			<img src="images/safari-logo-small.jpg"/>
+			<h2>Safari</h2>
+            <p>Safari，是苹果计算机的最新操作系统Mac OS X中的浏览器。</p>
+            <button class="btn btn-default">点我下载</button>
+		</div>
+	</div>
 </div>
 <script src="http://code.jquery.com/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
